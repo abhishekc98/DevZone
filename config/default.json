@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb+srv://abhishek201400:scanner5759@cluster0.i9etn.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "JwtSuperSecretKey",
+    "githubtoken": "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"
+}
