@@ -1,7 +1,6 @@
 const express = require('express');
 const { validationResult, check } = require('express-validator');
 const router = express.Router();
-const config = require('config');
 const auth = require('../../middleware/auth');
 const Profile = require('../../models/Profile');
 const User = require('../../models/User');
@@ -297,7 +296,7 @@ router.get('/github/:username', async (req, res) => {
     const headers = {
       'User-Agent': 'node.js',
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${config.get('githubtoken')}`,
+      Authorization: `Bearer ${process.env.REACT_APP_GITHUBTOKEN}`,
     };
 
     const gitHubResponse = await axios.get(uri, { headers });
