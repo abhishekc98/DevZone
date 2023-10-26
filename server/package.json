@@ -6,29 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
-    "server": "nodemon server",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \" npm run server\" \"npm run client\""
+    "dev": "nodemon server"
   },
   "author": "Abhishek Chakraborty",
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.15",
     "axios": "^0.21.4",
     "bcryptjs": "^2.4.3",
-    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.17.1",
     "express-validator": "^6.12.1",
     "gravatar": "^1.8.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.4",
-    "request": "^2.88.2"
+    "mongoose": "^6.0.4"
   },
   "devDependencies": {
-    "concurrently": "^6.2.1",
     "nodemon": "^2.0.12"
   }
 }
