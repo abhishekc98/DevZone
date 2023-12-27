@@ -21,7 +21,7 @@
     "redux-devtools-extension": "^2.13.9",
     "dotenv": "^16.3.1",
     "uuid": "^8.3.2",
-    "axios": "^0.21.4"
+    "axios": "^1.6.3"
   },
   "scripts": {
     "start": "react-scripts --max-old-space-size=512 start",
